@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>FIVE FINDER</title>
+</head>
+<body>
+  <h1 class="title">FIVE FINDER</h1>
+  <div class="game-container">
+    <div class="instructions">
+      <h2>Instructions:</h2>
+      <ul class="info">
+        <li>Guess a five letter word</li>
+        <li>Grey = wrong letter</li>
+        <li>Yellow = correct letter in the wrong position</li>
+        <li>Green = correct letter and position</li>
+      </ul>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+  <div class="result-container" id="result-container">
+    <div class="result">
+      <h2 class="text-result">You Won/Lost!</h2>
+      <h3>The word was:
+        <span class="word">
+          <div class="cell correct-letter">H</div>
+          <div class="cell correct-letter">E</div>
+          <div class="cell correct-letter">L</div>
+          <div class="cell correct-letter">L</div>
+          <div class="cell correct-letter">O</div>
+        </span>
+      </h3>
+      <button class="play-again" id="play-again">Guess another word</button>
+    </div>
+  </div>
+
+  <div class="popup" id="popup">
+    <span>Word not found</span>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
